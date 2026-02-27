@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+@theme {
+  --color-primary: #4b0082;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional Animation Delays */
+.delay-100 { animation-delay: 100ms; transition-delay: 100ms; }
+.delay-300 { animation-delay: 300ms; transition-delay: 300ms; }
+.delay-500 { animation-delay: 500ms; transition-delay: 500ms; }
+
+/* Custom Eyecatching Animations */
+
+@keyframes pulse-indigo {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+  }
+}
+
+.animate-pulse-indigo {
+  animation: pulse-indigo 2s infinite;
+}
