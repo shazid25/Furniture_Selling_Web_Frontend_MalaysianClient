@@ -1,9 +1,9 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { assets } from "../../assets/assets";
-import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
+import { useAppContext } from "../../context/appContext";
 const SellerLayout = () => {
-  const { isSeller, setIsSeller, axios, navigate } = useAppContext();
+  const { isSeller, setIsSeller, axios, navigate } = useAppContext ();
   const sidebarLinks = [
     { name: "Add Product", path: "/seller", icon: assets.add_icon },
     {
