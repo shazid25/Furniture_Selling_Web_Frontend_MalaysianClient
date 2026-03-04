@@ -17,6 +17,7 @@ import ProductList from "./pages/seller/ProductList";
 import Orders from "./pages/seller/Orders";
 import { useAppContext } from "./context/AppContext";
 import WhatsAppIcon from "./components/WhatsAppIcon"; //
+import Contact from "./pages/Contact";
 
 const App = () => {
   const isSellerPath = useLocation().pathname.includes("seller");
@@ -37,7 +38,8 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/add-address" element={<Address />} />
           <Route path="/my-orders" element={<MyOrders />} />
-          
+          <Route path="/contact" element={<Contact />} />
+
           <Route
             path="/seller"
             element={isSeller ? <SellerLayout /> : <SellerLogin />}
