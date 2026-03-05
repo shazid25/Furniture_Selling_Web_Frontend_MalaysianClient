@@ -1,54 +1,93 @@
-# Furniture Selling Web Frontend - Malaysian Client
+# 🛋️ Eco Home Solutions - Frontend (React)
 
-A modern React-based e-commerce frontend for furniture sales targeting Malaysian customers.
+This is the high-performance, visually stunning frontend for **Eco Home Solutions**, a premium furniture platform designed for the Malaysian market. Built with **React** and **Vite**, it focuses on a clean "Eco-modern" aesthetic, smooth user interactions, and a fully responsive layout.
 
-## Features
-- Product catalog with filtering and search
-- Shopping cart management
-- Secure checkout process
-- User authentication and profiles
-- Responsive design for mobile and desktop
-- Malaysian payment integration
+## 🎨 Design Philosophy
 
-## Tech Stack
-- **Frontend**: React, JavaScript
-- **Styling**: CSS/Tailwind CSS
-- **State Management**: Redux or Context API
-- **HTTP Client**: Axios
-- **Build Tool**: Create React App or Vite
+* **Aesthetic:** "Eco-Minimalism" using soft off-whites (`bg-slate-50`), organic rounded corners (`rounded-[32px]`), and indigo accents.
+* **Interactivity:** Smooth page transitions and element entries using **Framer Motion**.
+* **Clarity:** A distraction-free shopping experience (e.g., streamlined product overviews).
 
-## Installation
+---
 
+## 🚀 Tech Stack
+
+* **Framework:** React (Vite)
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
+* **Icons:** Lucide React
+* **Routing:** React Router DOM
+* **State Management:** React Context API (`appContext`)
+* **API Client:** Axios (fetching from Node.js/Express backend)
+
+---
+
+## ✨ Key Frontend Features
+
+* **Dynamic Product Gallery:** An interactive thumbnail-to-main-image gallery with hover-scale effects.
+* **Intelligent Related Products:** Automatically filters and displays products from the same category using a strict 1-column (mobile) / 4-column (desktop) grid.
+* **Premium Contact Page:** Features a grayscale-to-color Google Maps integration, floating background "blobs," and interactive social media tiles.
+* **Global Context:** Centralized state for products and user data, ensuring consistent data flow across components.
+* **Responsive Architecture:** Hand-optimized for mobile, tablet, and desktop views.
+
+---
+
+## 📂 Frontend Structure
+
+```text
+SRC/
+├── assets/             # Static images and icons
+├── components/         # Reusable UI (ProductCard, Navbar, Footer)
+├── context/            # Global State (appContext.jsx)
+├── pages/              # Main views (Home, Products, SingleProduct, Contact)
+├── App.jsx             # Route definitions
+└── main.jsx            # Entry point & Provider wrapping
+
+```
+
+---
+
+## 🛠️ Setup & Installation
+
+1. **Clone the repository:**
 ```bash
-# Clone repository
-git clone <repository-url>
+git clone https://github.com/shazid25/Furniture_Selling_Web_Frontend.git
+cd Furniture_Selling_Web_Frontend
 
-# Install dependencies
+```
+
+
+2. **Install dependencies:**
+```bash
 npm install
 
-# Start development server
-npm start
 ```
 
-## Environment Setup
-Create a `.env` file in the root directory:
-```
-REACT_APP_API_URL=http://localhost:5000
-REACT_APP_PAYMENT_KEY=your_payment_key
+
+3. **Environment Setup:**
+Create a `.env` file in the root:
+```env
+VITE_BACKEND_URL=http://localhost:5000
+
 ```
 
-## Project Structure
-```
-src/
-├── components/
-├── pages/
-├── styles/
-├── services/
-└── App.js
+
+4. **Run in development mode:**
+```bash
+npm run dev
+
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, open an issue first.
 
-## License
-MIT License
+
+---
+
+## 📞 Developer & Support
+
+For inquiries regarding frontend architecture or design implementation for the Malaysian furniture industry:
+
+* **Developer:** https://irfanshazidportfolio.web.app/
+* **GitHub:** [shazid25](https://github.com/shazid25)
+* **WhatsApp/Call:** 01647593123
+
+---

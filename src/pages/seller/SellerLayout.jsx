@@ -30,8 +30,17 @@ const SellerLayout = () => {
   return (
     <>
       <div className="flex items-center justify-between px-4 md:px-8 border-b border-gray-300 py-3 bg-white transition-all duration-300">
-        <Link to={"/"}>
-          <h1 className="text-2xl font-semibold">Grocery Store App</h1>
+        <Link to={"/"} className="flex items-center gap-2 flex-shrink-0">
+        
+        <img 
+          src={assets.logo} 
+          alt="Logo" 
+          className="w-auto h-8 md:h-10 object-contain" 
+        />
+        <h2 className="text-lg md:text-xl font-bold text-green-600 whitespace-nowrap">
+          Eco Home Solutions
+        </h2>
+     
         </Link>
         <div className="flex items-center gap-5 text-gray-500">
           <p>Hi! Admin</p>
