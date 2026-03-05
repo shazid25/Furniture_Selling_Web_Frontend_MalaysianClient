@@ -1,12 +1,54 @@
-# React + Vite
+# Furniture Selling Web Frontend - Malaysian Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based e-commerce frontend for furniture sales targeting Malaysian customers.
 
-Currently, two official plugins are available:
+## Features
+- Product catalog with filtering and search
+- Shopping cart management
+- Secure checkout process
+- User authentication and profiles
+- Responsive design for mobile and desktop
+- Malaysian payment integration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React, JavaScript
+- **Styling**: CSS/Tailwind CSS
+- **State Management**: Redux or Context API
+- **HTTP Client**: Axios
+- **Build Tool**: Create React App or Vite
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone repository
+git clone <repository-url>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+## Environment Setup
+Create a `.env` file in the root directory:
+```
+REACT_APP_API_URL=http://localhost:5000
+REACT_APP_PAYMENT_KEY=your_payment_key
+```
+
+## Project Structure
+```
+src/
+├── components/
+├── pages/
+├── styles/
+├── services/
+└── App.js
+```
+
+## Contributing
+Pull requests are welcome. For major changes, open an issue first.
+
+## License
+MIT License
